@@ -11,3 +11,4 @@ Here's a malware scan from VirusTotal Website in-case if anyone don't believe it
 - Download timetableapp.rar.
 - Extract the .rar file and compile it with a compiler (VS 2019 for mine).
 - Run the program.
+ 
