@@ -7,7 +7,7 @@ Before downloading this file, if anyone gets a warning from chrome said that thi
 Here's a malware scan from VirusTotal Website in-case if anyone don't believe it.
 - https://www.virustotal.com/gui/file/668f52a42eae16ad4493bc1dcb2bee57ebdf145063fe9ecb4748c430d75b158f/detection
 
-<h1><b>How to Open?</b></h1>
+<h2><b>How to Open?</b></h2>
 - Download timetableapp.rar.
 </br>- Extract the .rar file and compile it with a compiler (VS 2019 for mine). <br>
 - Run the program.
