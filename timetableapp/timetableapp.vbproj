@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0ECB418-198F-4589-B35E-4D8586D62BEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>timetableapp.My.MyApplication</StartupObject>
+    <RootNamespace>timetableapp</RootNamespace>
+    <AssemblyName>timetableapp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>timetableapp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>timetableapp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="EASendMail, Version=7.7.0.6, Culture=neutral, PublicKeyToken=88adb80ecd66540b, processorArchitecture=MSIL">
+      <HintPath>..\packages\EASendMail.7.7.0.6\lib\net461\EASendMail.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="timetableapp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBControl.vb" />
+    <Compile Include="Font\myfont.vb" />
+    <Compile Include="LecturerMainUI\LecturerChangePass.Designer.vb">
+      <DependentUpon>LecturerChangePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerChangePass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerChangeUsername.Designer.vb">
+      <DependentUpon>LecturerChangeUsername.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerChangeUsername.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerFormBooking.Designer.vb">
+      <DependentUpon>LecturerFormBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerFormBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerFormDashboard.Designer.vb">
+      <DependentUpon>LecturerFormDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerFormDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerAccount.Designer.vb">
+      <DependentUpon>LecturerAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerFormSearch.Designer.vb">
+      <DependentUpon>LecturerFormSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerFormSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerFormTimetable.Designer.vb">
+      <DependentUpon>LecturerFormTimetable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerFormTimetable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerProfile.Designer.vb">
+      <DependentUpon>LecturerProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerMainUI\LecturerProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecturer\ResetLecturerPassword.Designer.vb">
+      <DependentUpon>ResetLecturerPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturer\ResetLecturerPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecturer\LecturerMainPage.Designer.vb">
+      <DependentUpon>LecturerMainPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturer\LecturerMainPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerMainUI\ManageStudentDB.Designer.vb">
+      <DependentUpon>ManageStudentDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerMainUI\ManageStudentDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerMainUI\ManageStudentTimetable.Designer.vb">
+      <DependentUpon>ManageStudentTimetable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerMainUI\ManageStudentTimetable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerMainUI\SchedulerProfile.Designer.vb">
+      <DependentUpon>SchedulerProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerMainUI\SchedulerProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerMainUI\ManageLecturerDB.Designer.vb">
+      <DependentUpon>ManageLecturerDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerMainUI\ManageLecturerDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerMainUI\UserManage.Designer.vb">
+      <DependentUpon>UserManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerMainUI\UserManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scheduler\ResetPassScheduler.Designer.vb">
+      <DependentUpon>ResetPassScheduler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduler\ResetPassScheduler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMainUI\StudentProfile.Designer.vb">
+      <DependentUpon>StudentProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMainUI\StudentProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\ForgetPassword.Designer.vb">
+      <DependentUpon>ForgetPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student\ForgetPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMainUI\StudentChangePassword.Designer.vb">
+      <DependentUpon>StudentChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMainUI\StudentChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scheduler\SchedulerLogin.Designer.vb">
+      <DependentUpon>SchedulerLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduler\SchedulerLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scheduler\SchedulerMainPage.Designer.vb">
+      <DependentUpon>SchedulerMainPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduler\SchedulerMainPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMainUI\FormAccount.Designer.vb">
+      <DependentUpon>FormAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMainUI\FormAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMainUI\FormDashboard.Designer.vb">
+      <DependentUpon>FormDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMainUI\FormDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMainUI\FormProfile.Designer.vb">
+      <DependentUpon>FormProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMainUI\FormProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMainUI\FormSearch.Designer.vb">
+      <DependentUpon>FormSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMainUI\FormSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMainUI\FormTimetable.Designer.vb">
+      <DependentUpon>FormTimetable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMainUI\FormTimetable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecturer\Lecturerlogin.Designer.vb">
+      <DependentUpon>Lecturerlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturer\Lecturerlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecturer\LecturerRegister.Designer.vb">
+      <DependentUpon>LecturerRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturer\LecturerRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RGBColor.vb" />
+    <Compile Include="Scheduler\SchedulerRegistration.Designer.vb">
+      <DependentUpon>SchedulerRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduler\SchedulerRegistration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMainUI\StudentChangeUsername.Designer.vb">
+      <DependentUpon>StudentChangeUsername.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMainUI\StudentChangeUsername.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\Studentlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\Studentlogin.Designer.vb">
+      <DependentUpon>Studentlogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Student\StudentMainPage.Designer.vb">
+      <DependentUpon>StudentMainPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentMainPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\StudentRegister.Designer.vb">
+      <DependentUpon>StudentRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\TestINNERJOIN.Designer.vb">
+      <DependentUpon>TestINNERJOIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student\TestINNERJOIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimetableappDBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimetableappDBDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="TimetableappDBDataSet.vb">
+      <DependentUpon>TimetableappDBDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LecturerMainUI\LecturerChangePass.resx">
+      <DependentUpon>LecturerChangePass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerMainUI\LecturerChangeUsername.resx">
+      <DependentUpon>LecturerChangeUsername.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerMainUI\LecturerFormBooking.resx">
+      <DependentUpon>LecturerFormBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerMainUI\LecturerAccount.resx">
+      <DependentUpon>LecturerAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerMainUI\LecturerFormSearch.resx">
+      <DependentUpon>LecturerFormSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerMainUI\LecturerFormTimetable.resx">
+      <DependentUpon>LecturerFormTimetable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerMainUI\LecturerProfile.resx">
+      <DependentUpon>LecturerProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecturer\ResetLecturerPassword.resx">
+      <DependentUpon>ResetLecturerPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecturer\LecturerMainPage.resx">
+      <DependentUpon>LecturerMainPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerMainUI\ManageLecturerDB.resx">
+      <DependentUpon>ManageLecturerDB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerMainUI\ManageStudentDB.resx">
+      <DependentUpon>ManageStudentDB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerMainUI\ManageStudentTimetable.resx">
+      <DependentUpon>ManageStudentTimetable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerMainUI\SchedulerProfile.resx">
+      <DependentUpon>SchedulerProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerMainUI\UserManage.resx">
+      <DependentUpon>UserManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scheduler\ResetPassScheduler.resx">
+      <DependentUpon>ResetPassScheduler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scheduler\SchedulerMainPage.resx">
+      <DependentUpon>SchedulerMainPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMainUI\StudentProfile.resx">
+      <DependentUpon>StudentProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMainUI\StudentChangePassword.resx">
+      <DependentUpon>StudentChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scheduler\SchedulerLogin.resx">
+      <DependentUpon>SchedulerLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMainUI\FormAccount.resx">
+      <DependentUpon>FormAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMainUI\FormDashboard.resx">
+      <DependentUpon>FormDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMainUI\FormProfile.resx">
+      <DependentUpon>FormProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMainUI\FormSearch.resx">
+      <DependentUpon>FormSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMainUI\FormTimetable.resx">
+      <DependentUpon>FormTimetable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecturer\Lecturerlogin.resx">
+      <DependentUpon>Lecturerlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecturer\LecturerRegister.resx">
+      <DependentUpon>LecturerRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scheduler\SchedulerRegistration.resx">
+      <DependentUpon>SchedulerRegistration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMainUI\StudentChangeUsername.resx">
+      <DependentUpon>StudentChangeUsername.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentMainPage.resx">
+      <DependentUpon>StudentMainPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentRegister.resx">
+      <DependentUpon>StudentRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\Studentlogin.resx">
+      <DependentUpon>Studentlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\TestINNERJOIN.resx">
+      <DependentUpon>TestINNERJOIN.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Resources\DS_DIGI.TTF" />
+    <None Include="Resources\DS-DIGIB.TTF" />
+    <None Include="Resources\DS-DIGII.TTF" />
+    <None Include="Resources\DS-DIGIT.TTF" />
+    <None Include="TimetableappDBDataSet.xsc">
+      <DependentUpon>TimetableappDBDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TimetableappDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimetableappDBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TimetableappDBDataSet.xss">
+      <DependentUpon>TimetableappDBDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\professor_processor_microchip_ram_memory_chip_teacher-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-logo%28new%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\professor_processor_microchip_ram_memory_chip_teacher-5121.png" />
+    <None Include="Resources\professor_processor_microchip_ram_memory_chip_teacher-5122.png" />
+    <None Include="Resources\professor_processor_microchip_ram_memory_chip_teacher-5123.png" />
+    <None Include="Resources\User-Image.png" />
+    <None Include="Resources\User-Image1.png" />
+    <None Include="Resources\User-Image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OzarkIcon.ico" />
+    <Content Include="TimetableappDB.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

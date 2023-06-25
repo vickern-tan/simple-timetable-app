@@ -1,0 +1,266 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+timetableapp
+</name>
+</assembly>
+<members>
+<member name="T:timetableapp.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.DS_DIGI">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.DS_DIGIB">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.DS_DIGII">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.DS_DIGIT">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.professor_processor_microchip_ram_memory_chip_teacher_512">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.professor_processor_microchip_ram_memory_chip_teacher_5121">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.professor_processor_microchip_ram_memory_chip_teacher_5122">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.professor_processor_microchip_ram_memory_chip_teacher_5123">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.school">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.student">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.student1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.User_Image">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.User_Image1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.User_Image2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.user_logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.user_logo_new_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.user_logo_new_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.user_logo_new_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:timetableapp.My.Resources.Resources.user_logo1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.LecturerAccountDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.SchedulerAccountDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.StudentAccountDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.StudentTimetableDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.LecturerTimetableDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.LecturerAccountRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.SchedulerAccountRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.StudentAccountRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.StudentTimetableRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.LecturerTimetableRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.LecturerAccountRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.SchedulerAccountRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.StudentAccountRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.StudentTimetableRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSet.LecturerTimetableRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSetTableAdapters.LecturerAccountTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSetTableAdapters.SchedulerAccountTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSetTableAdapters.StudentAccountTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSetTableAdapters.StudentTimetableTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSetTableAdapters.LecturerTimetableTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:timetableapp.TimetableappDBDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(timetableapp.TimetableappDBDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:timetableapp.TimetableappDBDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(timetableapp.TimetableappDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:timetableapp.TimetableappDBDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(timetableapp.TimetableappDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:timetableapp.TimetableappDBDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:timetableapp.TimetableappDBDataSetTableAdapters.TableAdapterManager.UpdateAll(timetableapp.TimetableappDBDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:timetableapp.TimetableappDBDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
